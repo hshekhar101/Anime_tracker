@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Movie Tracker</title>
+
+  <!-- Font Awesome Icons  CDN-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="../CSS/swiper.css" />
+
+  <!-- Link Main CSS -->
+  <link rel="stylesheet" href="../CSS/style.css" />
+  <link rel="stylesheet" href="../CSS/sidebar.css" />
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <h1 class="name"><a href="index.html">Movie Tracker</a><i class="fa-solid fa-bars" id="bars"></i></h1>
+    <form action="" class="search-form" id="form">
+      <input type="search" class="search-box" name="search-box" id="search-box" placeholder="search movie..." />
+      <i class="fas fa-search search-btn" id="search-button"></i>
+    </form>
+  </header>
+  <!-- Header End -->
+
+  <!-- Sub-Header -->
+  <header class="sub-header genres hide" id="sub-header">
+    <ul>
+      <li id="action">Action</li>
+      <li id="adventure">Adventure</li>
+      <li id="comedy">Comedy</li> 
+      <li id="crime">Crime</li>
+      <li id="drama">Drama</li>
+      <li id="family">Family</li>
+      <li id="documentary">Documentary</li>
+      <li id="horror">Horror</li>
+      <li id="sci-fi">Sci-Fi</li>
+      <li id="romance">Romance</li>
+      <li id="thriller">Thriller</li>
+    </ul>
+  </header>
+  <!-- Sub-Header End -->
+
+  <!-- Main page -->
+  <main id="main">
+    <!-- Trending Movies -->
+    <section class="Trending movie">
+      <h1 class="heading">Trending Movies</h1>
+      <div class="swiper mySwiper container">
+        <div class="swiper-wrapper" id="trending-movies">
+          <!-- <div class="swiper-slide">
+          <div class="movie-card">
+            <div class="movie-poster">
+              <img src="./Images/m1.jpg" alt="Movie Poster" />
+            </div>
+            <div class="movie-info">
+              <div class="movie-year">2020</div>
+              <div class="movie-name">Movie Name</div>
+              <div class="movie-genre">Action</div>
+              <div class="movie-rating">
+                <span class="green">7.0</span>
+                <i class="fas fa-star star"></i>
+              </div>
+            </div>
+          </div>
+        </div> -->
+        </div>
+        <div class="swiper-button-next swiper-navigation"></div>
+        <div class="swiper-button-prev swiper-navigation"></div>
+      </div>
+    </section>
+
+    <!-- Top-rated -->
+    <section class="top-rated">
+      <h1 class="heading">Top Rated Movies</h1>
+      <div class="container" id="top-rated">
+        <!-- Card-1 -->
+        <!-- <div class="movie-card">
+        <div class="movie-poster">
+          <img src="./Images/m1.jpg" alt="Movie Poster" />
+        </div>
+        <div class="movie-info">
+          <div class="movie-year">2020</div>
+          <div class="movie-name">Movie Name</div>
+          <div class="movie-genre">Action</div>
+          <div class="movie-rating">
+            <span class="green">7.0</span>
+            <i class="fas fa-star star"></i>
+          </div>
+        </div>
+      </div> -->
+      </div>
+    </section>
+
+    <!-- Tv-shows -->
+    <section class="tv-shows">
+      <h1 class="heading">TV Shows</h1>
+      <div class="container" id="tv-shows"></div>
+    </section>
+
+    <!-- Upcoming -->
+    <section class="upcoming">
+      <h1 class="heading">Coming Soon</h1>
+      <div class="container" id="upcoming"></div>
+    </section>
+
+    <!-- Anime -->
+    <section class="anime">
+      <h1 class="heading">Anime</h1>
+      <div class="container" id="anime"></div>
+    </section>
+
+    <!-- Web-series -->
+    <section class="webseries">
+      <h1 class="heading">Web Series</h1>
+      <div class="container" id="webseries"></div>
+    </section>
+  </main>
+  <!-- Main page End -->
+
+  <!-- Other page -->
+  <footer>
+    <section id="Other" class="container">
+      <!-- <div class="movie-card">
+        <div class="movie-poster">
+          <img src="sample.jpg" alt="Movie Poster" />
+        </div>
+        <div class="movie-info">
+          <div class="movie-year">2020</div>
+          <div class="movie-name">Movie Name</div>
+          <div class="movie-rating">
+            <span class="green">7.0</span>
+            <i class="fas fa-star star"></i>
+          </div>
+        </div>
+      </div> -->
+    </section>
+  </footer>
+  <!-- Other page End -->
+
+  <!-- Main javascript -->
+  <script src="../JS/main.js"></script>
+
+  <!-- Swiper Javascript -->
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <script src="../JS/swiper.js"></script>
+</body>
+
+</html>

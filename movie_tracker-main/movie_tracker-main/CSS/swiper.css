@@ -1,0 +1,21 @@
+.swiper {
+  height: 360px;
+}
+
+.swiper-wrapper {
+  position: absolute;
+}
+
+.swiper-slide {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-navigation{
+  color: black;
+}
